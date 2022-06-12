@@ -1,0 +1,27 @@
+# SQL
+welcom to my SQL portfolio this code repository example of code ive written fell free to take a look and reach out via email if you have any quastions:belouadyounes6@gmail.com
+
+--Create a grocery store database
+
+
+CREATE TABLE my_store (id INTEGER PRIMARY KEY , item TEXT , quantity INTEGER, aisel INTEGER , price INTEGER , sale TEXT); 
+INSERT INTO my_store VALUES (1 , "banana", 3 , 5 , 0.25,"NO_DEAL" );
+ INSERT INTO my_store VALUES (2 , "PEACH" , 6 ,8, 2.23 , "BUY1_GET2_FREE");
+ INSERT INTO my_store VALUES (3 , "SODA" , 7, 3, 4,"BUY3_FOR10$");
+ INSERT INTO my_store VALUES (4 , "PEANUT_BUTTER",8 , 4 , 7 ,"NO_DEAL");
+ INSERT INTO my_store VALUES (5 , "APPLE" ,7 ,5, 3.40, "NO_DEAL");
+INSERT INTO my_store VALUES (6 , "potato" , 8 , 5, 1.20, "NO_DEAL");
+INSERT INTO my_store VALUES (7 , "tomato" , 11 , 5,1.35,"NO_DEAL");
+INSERT INTO my_store VALUES (8 , "garlic" , 1 , 5,3.5,"BUY2_FOR6$" );
+INSERT INTO my_store VALUES (9 , "juice" , 9, 3,7.5,"NO_DEAL");
+INSERT INTO my_store VALUES (10 , "water" , 25, 3, 1,"BUY5_GET1_FOR_FREE");
+INSERT INTO my_store VALUES (11 , "coockies" ,6 , 4,5.5,"BUY2_FOR10");
+INSERT INTO my_store VALUES (12 , "bread" , 12 , 4,0.80,"NO_DEAL");
+INSERT INTO my_store VALUES (13 , "chicken" , 9, 7,9.20,"NO_DEAL");
+INSERT INTO my_store VALUES (14 , "meat" , 6 , 7,23.45,"NO_DEAL");
+INSERT INTO my_store VALUES (15 , "carot", 15 ,5,1.20,"NO_DEAL");
+SELECT * FROM my_store;
+SELECT * FROM my_store ORDER BY price desc;
+
+--what are the most 5 expansive items in my_store:
+SELECT * FROM my_store ORDER BY price desc limit 5;
